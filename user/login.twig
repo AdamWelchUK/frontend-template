@@ -21,14 +21,14 @@
             {{ form_hidden('back', intended_url) }}
         {% endif %}
 
-        <div class="sp-form-row">
+        <div class="sp-form-row sp-hidden ">
             {{ form_label('email', Lang.get('general.email')) }}
             <div class="sp-input-container">
                 {{ form_email('email', null, {'autofocus': 'autofocus'}) }}
             </div>
         </div>
 
-        <div class="sp-form-row">
+        <div class="sp-form-row sp-hidden ">
             {{ form_label('password', Lang.get('general.password')) }}
             <div class="sp-input-container">
                 {{ form_password('password') }}
@@ -40,14 +40,14 @@
 
         <div class="sp-form-row">
             <label></label>
-            <div class="sp-input-container">
+            <div class="sp-input-container sp-hidden ">
                 <label>
                     {{ form_check('remember_me', '1') }} {{ Lang.get('user.remember_me') }}
                 </label>
             </div>
         </div>
 
-        <div class="sp-form-row">
+        <div class="sp-form-row sp-hidden">
             <label></label>
             <div class="sp-input-container">
                 {{ form_submit(Lang.get('user.login')) }}
